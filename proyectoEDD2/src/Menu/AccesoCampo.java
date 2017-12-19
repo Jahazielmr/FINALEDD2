@@ -136,13 +136,20 @@ public class AccesoCampo {
             registro = new Registro();
             nada = new ArrayList();
             registro.setCampos(nada);
+            Boolean eliminar = true;
             for (int j = 0; j < tamCampo; j++) {
+                if("*".equals(getCampoReg(acum+tamCampo+3).getContenido())){
+                    eliminar =false;
+                }
                 registro.getCampos().add(getCampoReg(acum+tamCampo+3));
                 registro.getCampos().get(j).setNombre(nombresCampos.get(j));
                 acum++;
 
             }
-            temporal.add(registro);
+            if(eliminar){
+                temporal.add(registro);
+            }
+            
         }
         return temporal;
     }

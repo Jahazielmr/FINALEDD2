@@ -194,7 +194,6 @@ public class Main extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tabla_registros = new javax.swing.JTable();
         jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jTabbedPane6 = new javax.swing.JTabbedPane();
@@ -212,6 +211,19 @@ public class Main extends javax.swing.JFrame {
         jButton33 = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
         jComboBox21 = new javax.swing.JComboBox<>();
+        jPanel25 = new javax.swing.JPanel();
+        jTabbedPane7 = new javax.swing.JTabbedPane();
+        jPanel26 = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        Borrar = new javax.swing.JButton();
+        jPanel27 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jButton35 = new javax.swing.JButton();
+        jComboBox22 = new javax.swing.JComboBox<>();
+        jButton36 = new javax.swing.JButton();
         panel_indices = new javax.swing.JPanel();
         jTabbedPane5 = new javax.swing.JTabbedPane();
         jPanel20 = new javax.swing.JPanel();
@@ -342,10 +354,10 @@ public class Main extends javax.swing.JFrame {
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                .addContainerGap(40, Short.MAX_VALUE)
+            .addGroup(jPanel12Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
                 .addComponent(jButton4)
-                .addGap(37, 37, 37))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         jButton18.setText("Cruzar archivos");
@@ -355,7 +367,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        jButton34.setText("Generar 10");
+        jButton34.setText("Generar 10000");
         jButton34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton34ActionPerformed(evt);
@@ -381,25 +393,24 @@ public class Main extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jButton34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(31, 31, 31)
+                .addComponent(jButton2)
+                .addGap(37, 37, 37)
+                .addComponent(jButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton18)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton34)
-                        .addGap(21, 21, 21)
-                        .addComponent(jButton1)
-                        .addGap(38, 38, 38)
-                        .addComponent(jButton2)
-                        .addGap(47, 47, 47)
-                        .addComponent(jButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton18)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(tab_nuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(tab_nuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28))
         );
 
         jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -597,13 +608,6 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        jButton9.setText("Eliminar Registro");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-
         jButton10.setText("Guardar");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -621,9 +625,7 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
                         .addComponent(jButton8)
-                        .addGap(31, 31, 31)
-                        .addComponent(jButton9)
-                        .addGap(37, 37, 37)
+                        .addGap(44, 44, 44)
                         .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(62, Short.MAX_VALUE))
@@ -636,7 +638,6 @@ public class Main extends javax.swing.JFrame {
                 .addGap(43, 43, 43)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton8)
-                    .addComponent(jButton9)
                     .addComponent(jButton10))
                 .addContainerGap(98, Short.MAX_VALUE))
         );
@@ -834,6 +835,133 @@ public class Main extends javax.swing.JFrame {
         );
 
         jTabbedPane2.addTab("Modificar Registro", jPanel6);
+
+        jLabel16.setText("Ingrese indice que desea borrar:");
+
+        Borrar.setText("Borrar");
+        Borrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BorrarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
+        jPanel26.setLayout(jPanel26Layout);
+        jPanel26Layout.setHorizontalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel26Layout.createSequentialGroup()
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel26Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(jLabel16)
+                        .addGap(30, 30, 30)
+                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel26Layout.createSequentialGroup()
+                        .addGap(191, 191, 191)
+                        .addComponent(Borrar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(177, Short.MAX_VALUE))
+        );
+        jPanel26Layout.setVerticalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel26Layout.createSequentialGroup()
+                .addGap(86, 86, 86)
+                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(67, 67, 67)
+                .addComponent(Borrar)
+                .addContainerGap(130, Short.MAX_VALUE))
+        );
+
+        jTabbedPane7.addTab("Eliminar por indice", jPanel26);
+
+        jLabel17.setText("Ingresar contenido de llave maestra:");
+
+        jLabel18.setText("Ingrese el registro:");
+
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+
+        jButton35.setText("Buscar Registro");
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
+
+        jButton36.setText("Eliminar Registro");
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
+        jPanel27.setLayout(jPanel27Layout);
+        jPanel27Layout.setHorizontalGroup(
+            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel27Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel27Layout.createSequentialGroup()
+                            .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(104, 104, 104))
+                        .addGroup(jPanel27Layout.createSequentialGroup()
+                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel27Layout.createSequentialGroup()
+                        .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(159, 159, 159)))
+                .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel27Layout.createSequentialGroup()
+                        .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 177, Short.MAX_VALUE)
+                        .addGap(88, 88, 88))
+                    .addGroup(jPanel27Layout.createSequentialGroup()
+                        .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox22, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+        jPanel27Layout.setVerticalGroup(
+            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel27Layout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel18))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54)
+                .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(92, Short.MAX_VALUE))
+        );
+
+        jTabbedPane7.addTab("Eliminar por criterio", jPanel27);
+
+        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
+        jPanel25.setLayout(jPanel25Layout);
+        jPanel25Layout.setHorizontalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 578, Short.MAX_VALUE)
+            .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jTabbedPane7))
+        );
+        jPanel25Layout.setVerticalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 354, Short.MAX_VALUE)
+            .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jTabbedPane7))
+        );
+
+        jTabbedPane2.addTab("Eliminar Registro", jPanel25);
 
         javax.swing.GroupLayout panel_registrosLayout = new javax.swing.GroupLayout(panel_registros);
         panel_registros.setLayout(panel_registrosLayout);
@@ -1596,6 +1724,7 @@ public class Main extends javax.swing.JFrame {
         File file = new File(path1);
         try {
             cam.crearFileCampo(file);
+            fileGlobal = file;
             metadata = cam.leerMetadata();
             cam.leerNumRegistros();
             cam.leerNumCampos();
@@ -1721,7 +1850,8 @@ public class Main extends javax.swing.JFrame {
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
         archivo = new Archivo();
-        tabla_campo = new JTable();
+        tabla_campo.setModel(new DefaultTableModel());
+        tabla_registros.setModel(new DefaultTableModel());
         JPanel p = new JPanel();
         metadata = "";
         Tab_principal.removeAll();
@@ -2238,15 +2368,6 @@ public class Main extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Se agrego exitosamente!");
     }//GEN-LAST:event_jButton10ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-        int selectedRow = tabla_registros.getSelectedRow();
-        tabla_registros.remove(selectedRow);
-        if (!registros.isEmpty()) {
-            registros.remove(selectedRow);
-        }
-    }//GEN-LAST:event_jButton9ActionPerformed
-
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         DefaultTableModel modelo = (DefaultTableModel) tabla_registros.getModel();
@@ -2266,7 +2387,7 @@ public class Main extends javax.swing.JFrame {
                     String ruta = jfc.getSelectedFile().getPath();
                     path1 = ruta;
                 }
-                
+
                 FileReader lector = new FileReader(path1);
 
                 BufferedReader contenido = new BufferedReader(lector);
@@ -2641,14 +2762,14 @@ public class Main extends javax.swing.JFrame {
             a.setCampos(newCampo(campos10mil));
             for (int j = 0; j < campos10mil.size(); j++) {
                 if (j == 0) {
-                    if(i%2==0){
+                    if (i % 2 == 0) {
                         a.getCampos().get(j).setContenido("M");
-                    }else{
+                    } else {
                         a.getCampos().get(j).setContenido("F");
                     }
-                    
+
                 } else {
-                    a.getCampos().get(j).setContenido("2017" + i+"11");
+                    a.getCampos().get(j).setContenido("2017" + i + "11");
                 }
             }
             registros10mil.add(a);
@@ -2686,6 +2807,116 @@ public class Main extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void BorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BorrarActionPerformed
+        // TODO add your handling code here:
+        if (indicesAux.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Verifique qie su arbol este cargado");
+        } else {
+            int XM = Integer.parseInt(jTextField4.getText());
+            //eliminar registros
+            boolean existe;
+
+            existe = arbol.buscar(XM, arbol.primerNodo);
+
+            if (existe == false) {
+                JOptionPane.showMessageDialog(null, "El indice que solicita Eliminar no existe en el arbol, ni en el archivo");
+
+            } else {
+                indiceGlobal = XM;
+                JOptionPane.showMessageDialog(null, "El indice que solicita Eliminar si existe en el arbol/archivo");
+
+                int indice = Integer.parseInt(jTextField4.getText());
+                try {
+                    AccesoCampo cam = new AccesoCampo();
+                    AvailList avail = new AvailList();
+                    cam.crearFileCampo(fileGlobal);
+                    cam.leerMetadata();
+                    int numReg = cam.leerNumRegistros();
+                    int numCamp = cam.leerNumCampos();
+                    cam.leerCampos();
+                    int temp = indice * numCamp;
+                    cam.modificarCampo(temp + 3 + numCamp, "*");
+                    avail.lista.add(indice);
+                } catch (IOException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+            }
+
+        }
+
+    }//GEN-LAST:event_BorrarActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        // TODO add your handling code here:
+        try {
+            String llave = jTextField5.getText();
+            AccesoCampo cam = new AccesoCampo();
+            String path1 = "";
+            String contenido = "";
+            JFileChooser jfc = new JFileChooser();
+            int seleccion = jfc.showOpenDialog(this);
+            if (seleccion == JFileChooser.APPROVE_OPTION) {
+                String ruta = jfc.getSelectedFile().getPath();
+                path1 = ruta;
+            }
+            contenido = leer(path1);
+            File file = new File(path1);
+            eliminarRegistro = file;
+            cam.crearFileCampo(file);
+            cam.leerMetadata();
+            int numReg = cam.leerNumRegistros();
+            int numCamp = cam.leerNumCampos();
+            ArrayList<Campo> camposTemporal = cam.leerCampos();
+            registrosTemp = new ArrayList();
+            integerEliminar = new ArrayList();
+            for (int i = 0; i < numReg; i++) {
+                int w = i * numCamp;
+                if (cam.getCampoReg(w + 3 + numCamp).getContenido().equals(llave)) {
+                    Registro regis = new Registro();
+                    for (int j = 0; j < numCamp; j++) {
+                        Campo campo = new Campo();
+                        campo.setContenido(cam.getCampo(w + 3 + numCamp + j).getContenido());
+                        regis.getCampos().add(campo);
+                    }
+                    registrosTemp.add(regis);
+                    integerEliminar.add(w);
+                }
+            }
+            DefaultComboBoxModel modelo1 = new DefaultComboBoxModel();
+            for (Registro t : registrosTemp) {
+                modelo1.addElement(t);
+            }
+            jComboBox22.setModel(modelo1);
+            cam.cerrar();
+        } catch (IOException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        try {
+            // TODO add your handling code here:
+            int indice = jComboBox22.getSelectedIndex();
+            File file = eliminarRegistro;
+            int indice2 = integerEliminar.get(indice);
+            AccesoCampo cam = new AccesoCampo();
+            cam.crearFileCampo(file);
+            cam.leerMetadata();
+            int numReg = cam.leerNumRegistros();
+            int numCamp = cam.leerNumCampos();
+            cam.leerCampos();
+            int temp = indice2 * numCamp;
+            cam.modificarCampo(temp + 3 + numCamp, "*");
+        } catch (IOException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton36ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2731,6 +2962,7 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Borrar;
     private javax.swing.JTabbedPane Tab_principal;
     private javax.swing.JButton bttn3;
     private javax.swing.JRadioButton bttn_1;
@@ -2767,15 +2999,17 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton32;
     private javax.swing.JButton jButton33;
     private javax.swing.JButton jButton34;
+    private javax.swing.JButton jButton35;
+    private javax.swing.JButton jButton36;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JButton jButtonProblem;
     private javax.swing.JComboBox<Campo> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox21;
+    private javax.swing.JComboBox<String> jComboBox22;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2783,6 +3017,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -2815,6 +3052,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -2834,9 +3074,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane4;
     private javax.swing.JTabbedPane jTabbedPane5;
     private javax.swing.JTabbedPane jTabbedPane6;
+    private javax.swing.JTabbedPane jTabbedPane7;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JDialog jd_campos;
     private javax.swing.JDialog jd_estandarizacion;
     private javax.swing.JDialog jd_indices;
@@ -2882,7 +3125,9 @@ public class Main extends javax.swing.JFrame {
 
     ArrayList<Registro> registrosTemp = new ArrayList();
     ArrayList<Integer> integerTemp = new ArrayList();
+    ArrayList<Integer> integerEliminar = new ArrayList();
     File modificarRegistro;
+    File eliminarRegistro;
 
     public void crearArbol(ArrayList<Integer> a) {
         arbol = new Raiz(6);
